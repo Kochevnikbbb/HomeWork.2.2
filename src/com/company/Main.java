@@ -12,13 +12,13 @@ public class Main {
         //createObject("Zevs").print();
 
 
-        Gods[] gods = {createObject("Ares"),createObject("Afina"),createObject("Zevs")};
-        /*for (int i = 0; i < gods.length; i++) {
+        Printable[] gods = {createObject("Ares"),createObject("Afina"),createObject("Zevs")};
+        for (int i = 0; i < gods.length; i++) {
             gods[i].print();
-        }*/
-        for (Gods a:gods) {
-            a.print();
         }
+        /*for (Printable a:gods) {
+            a.print();
+        }*/
 
 
 
@@ -26,19 +26,19 @@ public class Main {
 
 
     }
-    public static Gods createObject(String Gods){
-        //Printable printable = null;
+    public static Printable createObject(String Gods){
+        Printable printable = null;
         switch (Gods){
             case "Ares":
-                Ares ares = new Ares("Ares","GODofWAR");
+                printable = new Ares("Ares","GODofWAR");
                 break;
             case "Afina":
-                Afina afina = new Afina("Afina","Женщина");
+                printable = new Afina("Afina","Женщина");
                 break;
             case "Zevs":
-                Zevs zevs = new Zevs("Zevs","Islam");
+                printable = new Zevs("Zevs","Islam");
                 break;
         }
-        return null;
+        return printable;
     }
 }
