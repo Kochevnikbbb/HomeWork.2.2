@@ -1,23 +1,23 @@
 package com.company;
 
 public class Zevs extends Gods{
-    private String relegia;
+    private String religia;
 
     public Zevs(String name, String relegia) {
         super(name);
-        this.relegia = relegia;
+        this.religia = relegia;
     }
 
-    public String getRelegia() {
-        return relegia;
+    public String getReligia() {
+        return religia;
     }
 
-    public void setRelegia(String relegia) {
-        this.relegia = relegia;
+    public void setReligia(String religia) {
+        this.religia = religia;
     }
 
     @Override
     public void print() {
-        System.out.println(getName() + ": religia-" + getRelegia());
+        System.out.println(getName() + ": religia-" + getReligia());
     }
 }
